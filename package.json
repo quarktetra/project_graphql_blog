@@ -8,9 +8,10 @@
   "engineStrict": true,
   "scripts": {
     "dev": "NODE_OPTIONS='--openssl-legacy-provider' next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "start": "SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
+    "build": "SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts build"
+
   },
   "dependencies": {
     "graphql": "^15.6.1",
@@ -37,3 +38,4 @@
     "tailwindcss": "^3.4.13"
   }
 }
+
